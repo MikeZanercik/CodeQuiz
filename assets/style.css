@@ -2,7 +2,10 @@
     box-sizing: border-box;
 }
 
-.startingPage{
+.main{
     text-align: center;
     margin: 10% 25%;
 }
+.hide {
+    display: none;
+  }

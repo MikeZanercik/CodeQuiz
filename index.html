@@ -12,10 +12,23 @@
 </head>
 
 <body>
-    <div id="scorebox" class="hide">
-        <div>Seconds Left: <span id="timer"></span></div>
-        <div>Current Score: <span id="score"></span></div>
-    </div>
+    <header>
+        <div class="conatainer">
+            <div class="row">
+                <div class="col-6">
+                    <div id="scorebox" class="hide">
+                        <div>Seconds Left: <span id="timer"></span></div>
+                        <div>Current Score: <span id="score"></span></div>
+                    </div>
+                </div>
+                <div class="col-12" id="highScoreLink">
+                    <a href="../CodeQuiz/highscores.html">
+                        <div id="highScoreLink"> Score page</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
     <div class="main">
         <div id="startPage">
             <h1>Code Quiz</h1>
@@ -25,30 +38,22 @@
             <button id="start">Start Game</button>
         </div>
         <div id="question" class="hide">
-            <h3 id="questionHere">Questions Here!!!</h3>
+            <h3 id="questionHere"></h3>
             <div id="choicesHere"></div>
-            <!-- <button class="Btn">1</button>
-            <br>
-            <button class="Btn">2</button>
-            <br>
-            <button class="Btn">3</button>
-            <br>
-            <button class="Btn">4</button> -->
-            
         </div>
     </div>
 
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="./assets/questions.js"></script>
     <script src="./assets/javascript.js"></script>
 </body>

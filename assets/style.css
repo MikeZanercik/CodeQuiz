@@ -9,3 +9,10 @@
 .hide {
     display: none;
   }
+
+# scorebox{
+    margin-left: 10%;
+}
+#highScoreLink{
+    text-align: center;
+}

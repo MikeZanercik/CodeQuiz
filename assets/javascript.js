@@ -6,7 +6,9 @@ var scoreEl = document.querySelector("#score");
 var scoreboxEl = document.querySelector("#scorebox");
 var answersHereEl = document.querySelector("#choicesHere");
 var questionHereEl = document.querySelector("#questionHere");
+var highScoreLinkEl = document.querySelector("#highScoreLink");
 var score, secondsLeft, timerInterval, question, qIndex;
+
 
 startEl.addEventListener("click", startFunction);
 
@@ -18,6 +20,7 @@ function startFunction(event) {
 
     startPageEl.classList.add("hide");
     questionEl.classList.remove("hide");
+    highScoreLinkEl.classList.add("hide");
 
     startTimer();
     displayQuestion();
@@ -68,4 +71,10 @@ function endGame() {
 
     startPageEl.classList.toggle("hide");
     questionEl.classList.toggle("hide");
+    highScorePage();
 }
+function highScorePage(){
+    window.location = "../CodeQuiz/highscores.html";
+    scoreboxEl.classList.remove("hide");
+}
+console.log(score);

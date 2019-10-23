@@ -13,16 +13,17 @@
     <div class="main">
         <h1>High Scores</h1>
         <div id="scoreCard">
-            <div id="scorebox" class="hide">
-                <div>Your score: <span id="score"></span></div>
-            </div>
             <form>
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Enter Name">
+                    <div id="scorebox">
+                        <div>Your Score: <span id="score"></span></div>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+                <input type="text" class="form-control" placeholder="Enter Name">
         </div>
+        <button id="highScore" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
 
     </div>
 

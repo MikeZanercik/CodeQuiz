@@ -7,17 +7,18 @@ var scoreboxEl = document.querySelector("#scorebox");
 var answersHereEl = document.querySelector("#choicesHere");
 var questionHereEl = document.querySelector("#questionHere");
 var highScoreLinkEl = document.querySelector("#highScoreLink");
+var highScoreBtn = document.querySelector("#highScore");
 var score, secondsLeft, timerInterval, question, qIndex;
 
 
 startEl.addEventListener("click", startFunction);
+
 
 function startFunction(event) {
     score = 0, qIndex = 0, secondsLeft = 75;
     scoreEl.textContent = score;
     timeEl.textContent = secondsLeft;
     scoreboxEl.classList.remove("hide");
-
     startPageEl.classList.add("hide");
     questionEl.classList.remove("hide");
     highScoreLinkEl.classList.add("hide");
@@ -44,7 +45,7 @@ function displayQuestion() {
     for (var i in question.choices) {
         var button = document.createElement("button");
         button.setAttribute("value", question.choices[i]);
-        button.classList.add("btn", "btn-default");
+        button.classList.add("btn", "btn-outline-primary");
         button.innerText = question.choices[i];
         button.onclick = handleClick;
         answersHereEl.appendChild(button)
@@ -75,6 +76,9 @@ function endGame() {
 }
 function highScorePage(){
     window.location = "../CodeQuiz/highscores.html";
-    scoreboxEl.classList.remove("hide");
+    console.log(score);
 }
-console.log(score);
+// function highScoreFunction(){
+//     // save score here in local storage//
+// }
+// // highScoreBtn.addEventListener("click", highScoreFunction);

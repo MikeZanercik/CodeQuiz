@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+body{
+    background-image: url(../assets/Images/criss-cross.png);
+}
 
 .main{
     text-align: center;
@@ -10,9 +13,12 @@
     display: none;
   }
 
-# scorebox{
+#scorebox{
     margin-left: 10%;
 }
 #highScoreLink{
     text-align: center;
+}
+.btn{
+    margin: 1%;
 }
